@@ -38,7 +38,7 @@ const LoaderWrapper = styled.div`
 function Freelances() {
   const { theme } = useTheme()
   const { data, isLoading, error } = useFetch(
-    `http://localhost:8000/freelances`,
+    `https://shiny-api.vercel.app/freelances`,
   )
 
   // Ici le "?" permet de s'assurer que data existe bien.

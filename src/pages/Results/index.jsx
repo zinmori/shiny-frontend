@@ -77,7 +77,7 @@ function Results() {
   const queryParams = formatQueryParams(answers)
 
   const { data, isLoading, error } = useFetch(
-    `http://localhost:8000/results?${queryParams}`,
+    `https://shiny-api.vercel.app/results?${queryParams}`,
   )
 
   if (error) {
